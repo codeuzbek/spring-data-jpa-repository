@@ -1,0 +1,34 @@
+### Create Student
+POST localhost:8080/student
+Content-Type: application/json
+
+{
+  "name": "Vali",
+  "surname": "Valiyev",
+  "age": 19
+}
+
+### Create Student wirth flush
+POST localhost:8080/student/flush
+Content-Type: application/json
+
+{
+  "name": "Vali",
+  "surname": "Valiyev",
+  "age": 19
+}
+
+### Delete all students by id list
+POST localhost:8080/student/all
+Content-Type: application/json
+
+[
+  1,
+  2,
+  3,
+  4,
+  5
+]
+
+### Delete all students
+DELETE localhost:8080/student/all
